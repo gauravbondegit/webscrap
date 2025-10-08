@@ -33,3 +33,38 @@ Enter the desired city name when prompted.
 The extracted data will be saved in an Excel file in the same directory as the script.
 Enter the city name: Mumbai
 Data saved to loan_service_providers_Mumbai.xlsx
+
+
+
+bash 
+```
+/multi_agent_system
+|
+├── 📂 agents/                # Directory for all specialized agents
+│   ├── __init__.py         # Makes the folder a Python package
+│   ├── arxiv_agent.py      # Logic for the ArXiv search agent
+│   ├── pdf_rag_agent.py    # Logic for the PDF RAG agent
+│   └── web_search_agent.py   # Logic for the web search agent
+|
+├── 📂 domain_pdfs/           # Contains sample PDFs for testing
+│   └── ...
+|
+├── 📂 logs/                  # Stores logs from the system
+│   └── controller_log.jsonl # Logs every decision made by the Controller
+|
+├── 📂 uploads/               # Temporary storage for user-uploaded PDFs
+│   └── ...
+|
+├── 📂 vector_store/          # Caches the FAISS vector embeddings for PDFs
+│   └── ...
+|
+├── 📜 .env                   # Stores secret environment variables (API keys)
+├── 📜 .gitignore             # Specifies files for Git to ignore (e.g., myenv/, __pycache__/)
+├── 📜 README.md              # Project documentation
+├── 📜 app.py                 # The Streamlit frontend application
+├── 📜 controller.py           # The Controller Agent logic (the "brain")
+├── 📜 main.py                # The FastAPI backend server
+├── 📜 requirements.txt        # Lists all Python package dependencies
+└── 📜 utils.py               # Helper functions, like the answer synthesizer
+
+```
