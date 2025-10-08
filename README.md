@@ -36,35 +36,32 @@ Data saved to loan_service_providers_Mumbai.xlsx
 
 
 
-bash 
+yaha se
 ```
 /multi_agent_system
 |
-├── 📂 agents/                # Directory for all specialized agents
+├── agents/                # Directory for all specialized agents
 │   ├── __init__.py         # Makes the folder a Python package
 │   ├── arxiv_agent.py      # Logic for the ArXiv search agent
 │   ├── pdf_rag_agent.py    # Logic for the PDF RAG agent
 │   └── web_search_agent.py   # Logic for the web search agent
 |
-├── 📂 domain_pdfs/           # Contains sample PDFs for testing
-│   └── ...
+├── domain_pdfs/           # Contains sample PDFs for testing
 |
-├── 📂 logs/                  # Stores logs from the system
-│   └── controller_log.jsonl # Logs every decision made by the Controller
+├── logs/                  # Stores logs from the system
 |
-├── 📂 uploads/               # Temporary storage for user-uploaded PDFs
-│   └── ...
+├── uploads/               # Temporary storage for user-uploaded PDFs
 |
-├── 📂 vector_store/          # Caches the FAISS vector embeddings for PDFs
-│   └── ...
+├── vector_store/          # Caches the FAISS vector embeddings for PDFs
 |
-├── 📜 .env                   # Stores secret environment variables (API keys)
-├── 📜 .gitignore             # Specifies files for Git to ignore (e.g., myenv/, __pycache__/)
-├── 📜 README.md              # Project documentation
-├── 📜 app.py                 # The Streamlit frontend application
-├── 📜 controller.py           # The Controller Agent logic (the "brain")
-├── 📜 main.py                # The FastAPI backend server
-├── 📜 requirements.txt        # Lists all Python package dependencies
-└── 📜 utils.py               # Helper functions, like the answer synthesizer
+├── .env                   # Stores secret environment variables (API keys)
+├── .gitignore             # Specifies files for Git to ignore
+├── README.md              # Project documentation
+├── app.py                 # The Streamlit frontend application
+├── controller.py          # The Controller Agent logic (the "brain")
+├── main.py                # The FastAPI backend server
+├── requirements.txt       # Lists all Python package dependencies
+├── test_api.py            # A script for testing the Google API key
+└── utils.py               # Helper functions, including the answer synthesizer
 
 ```
